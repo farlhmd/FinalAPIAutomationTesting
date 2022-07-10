@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstname\&quot; : \&quot;Jim\&quot;,\n    \&quot;lastname\&quot; : \&quot;Brown\&quot;,\n    \&quot;totalprice\&quot; : 111,\n    \&quot;depositpaid\&quot; : true,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2018-01-01\&quot;,\n        \&quot;checkout\&quot; : \&quot;2019-01-01\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;Breakfast\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;firstname\&quot; : \&quot;Farhan\&quot;,\n    \&quot;lastname\&quot; : \&quot;Ilhamdi\&quot;,\n    \&quot;totalprice\&quot; : 100,\n    \&quot;depositpaid\&quot; : true,\n    \&quot;bookingdates\&quot; : {\n        \&quot;checkin\&quot; : \&quot;2022-01-07\&quot;,\n        \&quot;checkout\&quot; : \&quot;2022-01-08\&quot;\n    },\n    \&quot;additionalneeds\&quot; : \&quot;Breakfast\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -23,11 +23,19 @@
       <value>application/json</value>
       <webElementGuid>ce1b3d3c-01f0-4501-a355-ed7dc9bae14c</webElementGuid>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Accept</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>3a0977c2-4dd0-47aa-ae3f-b64e836cbcaf</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking</restUrl>
+   <restUrl>${GlobalVariable.url}/booking</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
