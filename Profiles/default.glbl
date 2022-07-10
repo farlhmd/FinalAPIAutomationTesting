@@ -14,4 +14,9 @@
       <initValue>'ff89f33288302b6'</initValue>
       <name>loginToken</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3567'</initValue>
+      <name>id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
