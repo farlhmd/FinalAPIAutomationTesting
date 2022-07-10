@@ -25,5 +25,9 @@ WS.comment("Success if the response code is 200")
 WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
+// Assign json slurper to a new variable
+def slurper = new JsonSlurper()
 
+// Assign slurper result into a new variable
+def result = slurper.parseText(response.getResponseBodyContent())
 
