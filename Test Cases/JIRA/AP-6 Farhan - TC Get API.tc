@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Summary: Farhan - TC Get API
+Description: </description>
+   <name>AP-6 Farhan - TC Get API</name>
+   <tag>jira-integration</tag>
+   <integratedEntity>
+      <productName>JIRA</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;jiraIssue&quot;:{&quot;fields&quot;:{&quot;customFields&quot;:{&quot;customfield_10031&quot;:[],&quot;customfield_10018&quot;:{&quot;hasEpicLinkFieldDependency&quot;:false,&quot;showField&quot;:false,&quot;nonEditableReason&quot;:{&quot;reason&quot;:&quot;PLUGIN_LICENSE_ERROR&quot;,&quot;message&quot;:&quot;The Parent Link is only available to Jira Premium users.&quot;}},&quot;customfield_10019&quot;:&quot;0|i0003j:&quot;},&quot;status&quot;:{&quot;id&quot;:10000,&quot;description&quot;:&quot;&quot;,&quot;iconUrl&quot;:&quot;https://timbelajar1.atlassian.net/&quot;,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/status/10000&quot;,&quot;name&quot;:&quot;To Do&quot;},&quot;project&quot;:{&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/project/10001&quot;,&quot;key&quot;:&quot;AP&quot;,&quot;id&quot;:10001,&quot;name&quot;:&quot;API Project&quot;},&quot;components&quot;:[],&quot;summary&quot;:&quot;Farhan - TC Get API&quot;,&quot;reporter&quot;:{&quot;emailAddress&quot;:&quot;m.farhanilhamdi@icloud.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Muhammad Farhan Ilhamdi&quot;,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/user?accountId\u003d62c4e83c9763a5e6026fbf30&quot;},&quot;assignee&quot;:{&quot;emailAddress&quot;:&quot;m.farhanilhamdi@icloud.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Muhammad Farhan Ilhamdi&quot;,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/user?accountId\u003d62c4e83c9763a5e6026fbf30&quot;},&quot;priority&quot;:{&quot;id&quot;:2,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/priority/2&quot;,&quot;name&quot;:&quot;High&quot;},&quot;votes&quot;:{&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/issue/AP-6/votes&quot;,&quot;votes&quot;:0,&quot;hasVoted&quot;:false},&quot;fixVersions&quot;:[],&quot;subtasks&quot;:[],&quot;labels&quot;:[]},&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/issue/10017&quot;,&quot;key&quot;:&quot;AP-6&quot;,&quot;id&quot;:10017}}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>a3e7c259-2ac5-4330-b21a-5f9aff04ab9b</testCaseGuid>
+</TestCaseEntity>
