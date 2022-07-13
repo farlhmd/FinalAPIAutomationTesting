@@ -89,14 +89,14 @@
       <name>depositPaid</name>
    </variable>
    <variable>
-      <defaultValue>'2022-01-07'</defaultValue>
+      <defaultValue>'2022-07-01'</defaultValue>
       <description></description>
       <id>c9985089-1192-45e2-9f73-591a5937369e</id>
       <masked>false</masked>
       <name>bookingCheckIn</name>
    </variable>
    <variable>
-      <defaultValue>'2022-01-08'</defaultValue>
+      <defaultValue>'2022-07-08'</defaultValue>
       <description></description>
       <id>d22b4d5d-e67c-4d47-b703-2297edd2c052</id>
       <masked>false</masked>
