@@ -18,7 +18,20 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-GlobalVariable.id = id
+// To implement DDT
+GlobalVariable.firstName = firstName
+
+GlobalVariable.lastName = lastName
+
+GlobalVariable.totalPrice = totalPrice
+
+GlobalVariable.depositPaid = depositPaid
+
+GlobalVariable.bookingCheckIn = bookingCheckIn
+
+GlobalVariable.bookingCheckOut = bookingCheckOut
+
+GlobalVariable.additionalNeeds = additionalNeeds
 
 response = WS.sendRequest(findTestObject('EP_Booking/Post Booking'))
 
@@ -31,4 +44,65 @@ def slurper = new JsonSlurper()
 // Assign slurper result into a new variable
 def result = slurper.parseText(response.getResponseBodyContent())
 
+WS.comment('To check all available indexes of data')
 
+// for(int i = 0; i < result.size(); i++) {
+// To shorten the validation procedure, I only test 10 item instead of 3000+ datas, if you want, uncomment the code above and comment the code below
+//for(int i = 0; i < 10; i++) {
+
+
+id = result.bookingid
+//
+//firstName = result.booking.firstname
+//
+//lastName = result.booking.lastname
+//
+//totalPrice = result.booking.totalprice
+//
+//depositPaid = result.booking.depositpaid
+//
+//bookingCheckIn = result.booking.bookingdates.checkin
+//
+//bookingCheckOut = result.booking.bookingdates.checkout
+//
+//additionalNeeds = result.additionalneeds
+
+firstNameVerified = WS.verifyElementPropertyValue(response, 'booking.firstname', firstName, FailureHandling.OPTIONAL)
+
+lastNameVerified = WS.verifyElementPropertyValue(response, 'booking.lastname', lastName, FailureHandling.OPTIONAL)
+
+totalPriceVerified = WS.verifyElementPropertyValue(response, 'booking.totalprice', totalPrice, FailureHandling.OPTIONAL)
+
+depositPaidVerified = WS.verifyElementPropertyValue(response, 'booking.depositpaid', depositPaid, FailureHandling.OPTIONAL)
+
+bookingCheckInVerified = WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkin', bookingCheckIn, FailureHandling.OPTIONAL)
+
+bookingCheckOutVerified = WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkout', bookingCheckOut, FailureHandling.OPTIONAL)
+
+additionalNeedsVerified = WS.verifyElementPropertyValue(response, 'booking.additionalneeds', additionalNeeds, FailureHandling.OPTIONAL)
+
+if (firstNameVerified == true) {
+    WS.comment("The item with First Name $firstName is valid")
+
+    if (lastNameVerified == true) {
+        WS.comment("The item with Last Name $lastName is valid")
+
+        if (totalPriceVerified == true) {
+            WS.comment("The item with Total Price $totalPrice is valid")
+
+            if (depositPaidVerified == true) {
+                WS.comment("The item with Deposit Paid $depositPaid is valid")
+            } else {
+                WS.comment("The item with Deposit Paid $depositPaid is invalid")
+            }
+        } else {
+            WS.comment("The item with Total Price $totalPrice is invalid")
+        }
+    } else {
+        WS.comment("The item with Last Name $lastName is invalid")
+    }
+} else {
+    WS.comment("The item with First Name $firstName is invalid")
+}
+
+WS.comment("Your New Booking ID: $id")
