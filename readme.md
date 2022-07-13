@@ -1,6 +1,6 @@
 For a better experience on reading this, open from: [Github](https://github.com/farlhmd/FinalAPIAutomationTest)
 
-# Final Project | Mobile Testing
+# Final Project | API Testing
 This project repository: [Final Project | API](https://github.com/farlhmd/FinalAPIAutomationTesting)
 
 This automation tested API from: [Restful-Booker](https://restful-booker.herokuapp.com)
@@ -17,7 +17,7 @@ The tested Endpoints are:
 ```	
 /booking	
 /booking/$id
-The 
+(DDT Based)
 ```
 ```
 /ping
@@ -28,7 +28,7 @@ for a detailed explanation, read from: [Google Spreadsheet](https://docs.google.
 
 
 
-## Running Mobile Automation Test with Katalon Studio
+## Running API Automation Test with Katalon Studio
 
 
 1. Clone this project or Download .zip
