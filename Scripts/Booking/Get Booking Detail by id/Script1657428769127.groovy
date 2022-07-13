@@ -36,6 +36,8 @@ WS.comment('To check all available indexes of data')
 // for(int i = 0; i < result.size(); i++) {
 // To shorten the validation procedure, I only test 10 item instead of 3000+ datas, if you want, uncomment the code above and comment the code below
 //for(int i = 0; i < 10; i++) {
+
+// The results from Json Slurper
 //firstName = result.firstname
 //
 //lastName = result.lastname
