@@ -67,42 +67,42 @@ id = result.bookingid
 //
 //additionalNeeds = result.additionalneeds
 
-firstNameVerified = WS.verifyElementPropertyValue(response, 'booking.firstname', firstName, FailureHandling.OPTIONAL)
+firstNameVerified = WS.verifyElementPropertyValue(response, 'booking.firstname', GlobalVariable.firstName, FailureHandling.OPTIONAL)
 
-lastNameVerified = WS.verifyElementPropertyValue(response, 'booking.lastname', lastName, FailureHandling.OPTIONAL)
+lastNameVerified = WS.verifyElementPropertyValue(response, 'booking.lastname', GlobalVariable.lastName, FailureHandling.OPTIONAL)
 
-totalPriceVerified = WS.verifyElementPropertyValue(response, 'booking.totalprice', totalPrice, FailureHandling.OPTIONAL)
+totalPriceVerified = WS.verifyElementPropertyValue(response, 'booking.totalprice', GlobalVariable.totalPrice, FailureHandling.OPTIONAL)
 
-depositPaidVerified = WS.verifyElementPropertyValue(response, 'booking.depositpaid', depositPaid, FailureHandling.OPTIONAL)
+depositPaidVerified = WS.verifyElementPropertyValue(response, 'booking.depositpaid', GlobalVariable.depositPaid, FailureHandling.OPTIONAL)
 
-bookingCheckInVerified = WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkin', bookingCheckIn, FailureHandling.OPTIONAL)
+bookingCheckInVerified = WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkin', GlobalVariable.bookingCheckIn, FailureHandling.OPTIONAL)
 
-bookingCheckOutVerified = WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkout', bookingCheckOut, FailureHandling.OPTIONAL)
+bookingCheckOutVerified = WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkout', GlobalVariable.bookingCheckOut, FailureHandling.OPTIONAL)
 
-additionalNeedsVerified = WS.verifyElementPropertyValue(response, 'booking.additionalneeds', additionalNeeds, FailureHandling.OPTIONAL)
+additionalNeedsVerified = WS.verifyElementPropertyValue(response, 'booking.additionalneeds', GlobalVariable.additionalNeeds, FailureHandling.OPTIONAL)
 
 if (firstNameVerified == true) {
-    WS.comment("The item with First Name $firstName is valid")
+    WS.comment("The item with First Name $GlobalVariable.firstName is valid")
 
     if (lastNameVerified == true) {
-        WS.comment("The item with Last Name $lastName is valid")
+        WS.comment("The item with Last Name $GlobalVariable.lastName is valid")
 
         if (totalPriceVerified == true) {
-            WS.comment("The item with Total Price $totalPrice is valid")
+            WS.comment("The item with Total Price $GlobalVariable.totalPrice is valid")
 
             if (depositPaidVerified == true) {
-                WS.comment("The item with Deposit Paid $depositPaid is valid")
+                WS.comment("The item with Deposit Paid $GlobalVariable.depositPaid is valid")
             } else {
-                WS.comment("The item with Deposit Paid $depositPaid is invalid")
+                WS.comment("The item with Deposit Paid $GlobalVariable.depositPaid is invalid")
             }
         } else {
-            WS.comment("The item with Total Price $totalPrice is invalid")
+            WS.comment("The item with Total Price $GlobalVariable.totalPrice is invalid")
         }
     } else {
-        WS.comment("The item with Last Name $lastName is invalid")
+        WS.comment("The item with Last Name $GlobalVariable.lastName is invalid")
     }
 } else {
-    WS.comment("The item with First Name $firstName is invalid")
+    WS.comment("The item with First Name $GlobalVariable.firstName is invalid")
 }
 
 WS.comment("Your New Booking ID: $id")
