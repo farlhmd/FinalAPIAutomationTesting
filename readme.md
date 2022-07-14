@@ -43,6 +43,7 @@ for a detailed explanation, read from: [Google Spreadsheet](https://docs.google.
 
 ## Other Automation Test Projects
 Feeling lost? Don't forget to checkout another projects of mine:
+
 - [Final Project Mobile](https://github.com/farlhmd/FinalMobileAutomationTesting)
 - [Final Project Web](https://github.com/farlhmd/FinalWebAutomationTesting)
 - [Assignment 2 (API Testing)](https://github.com/farlhmd/Assignment2APIAutomationTesting)
